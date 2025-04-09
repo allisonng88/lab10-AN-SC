@@ -7,5 +7,7 @@ One function per operation, in order.
 # First example
 def add(a, b): 
     pass
+def sub(a, b):
+    return a-b
 
 
