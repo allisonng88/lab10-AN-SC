@@ -6,6 +6,7 @@ One function per operation, in order.
 """
 # First example
 import math
+
 def add(a, b):
     return a + b
 def sub(a, b):
@@ -16,6 +17,12 @@ def divide(a, b):
     if a == 0:
         raise ZeroDivisionError
     return b/a
+try:
+    a = int(input("a: "))
+    b = int(input("b: "))
+    result = divide(a, b)
+except ZeroDivisionError as e:
+    print(f"Error")
 def logarithm(a, b):
     if b <= 0 or a <= 1:
         raise ValueError
