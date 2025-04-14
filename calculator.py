@@ -24,7 +24,7 @@ def div(a, b):
         print(f"Error: Division by zero")
 
 
-def logarithm(a,b):
+def log(a,b):
     try:
         if b<=0 and a<=1:
             raise ValueError
