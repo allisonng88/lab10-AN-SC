@@ -14,25 +14,21 @@ def sub(a, b):
 def multiply(a, b):
     return a * b
 def divide(a, b):
-    if a == 0:
-        raise ZeroDivisionError
-    return b/a
-try:
-    a = int(input("a: "))
-    b = int(input("b: "))
-    result = divide(a, b)
-except ZeroDivisionError:
-    print(f"Division by zero error")
+    try:
+        if a != 0:
+            return b/a
+        else:
+            raise ZeroDivisionError
+    except ZeroDivisionError:
+        print(f"Division by zero error")
 def logarithm(a, b):
-    if b <= 0 or a <= 1:
-        raise ValueError
-    return math.log(b, a)
-try:
-    a = int(input("a: "))
-    b = int(input("b: "))
-    result = logarithm(a, b)
-except ValueError:
-    print(f"Value Error")
+    try:
+        if a > 1 or b > 0:
+            return math.log(b, a)
+        else:
+            raise ValueError
+    except ZeroDivisionError:
+        print(f"Value Error")
 def exponent(a, b):
     return a**b
 
