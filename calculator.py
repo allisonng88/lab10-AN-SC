@@ -19,11 +19,11 @@ def hypotenuse(a, b):
 
 def add(a, b):
     return a + b
-def sub(a, b):
+def subtract(a, b):
     return b-a
-def multiply(a, b):
+def mul(a, b):
     return a * b
-def divide(a, b):
+def div(a, b):
     try:
         if a != 0:
             return b/a
@@ -39,7 +39,7 @@ def logarithm(a, b):
             raise ValueError
     except ZeroDivisionError:
         print(f"Value Error")
-def exponent(a, b):
+def exp(a, b):
     return a**b
 
 
