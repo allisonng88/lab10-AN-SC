@@ -1,3 +1,7 @@
+# https://github.com/allisonng88/lab10-AN-SC
+# Partner 1: Allison Ng
+# Partner 2: Shivani Chandrasekar
+
 import unittest
 from calculator import *
 

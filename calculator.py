@@ -1,9 +1,14 @@
+# https://github.com/allisonng88/lab10-AN-SC
+# Partner 1: Allison Ng
+# Partner 2: Shivani Chandrasekar
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
 
 One function per operation, in order.
 """
+
 # First example
 import math
 def square_root(a):
